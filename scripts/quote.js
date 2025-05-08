@@ -1,0 +1,86 @@
+// Quote cũ, giữ lại đề phòng bị sai
+// var quote = [
+//     "Tri thức là sức mạnh. F.Bacon",
+//     "Cần phải lựa chọn một cách nghiêm ngặt xem nên học gì và không nên học gì. [Lev Tolstoy]",
+//     "Đọc sách không bằng suy ngẫm, Học trường không hơn được trường đời. [Immanuel Kant]",
+//     "Nghị lực và bền bỉ có thể giúp bạn chinh phục mọi thứ",
+//     "Cuộc đời sẽ tươi đẹp hơn rất nhiều nếu ta có những tình bạn đúng nghĩa, luôn hết mình vì người khác.",
+//     "Một chữ cũng là thầy, nửa chữ cũng là thầy [Tục ngữ Việt Nam]",
+//     "Vấp ngã không phải là thất bại, chỉ là dừng lại cho đỡ mỏi chân thôi!",
+//     "Giáo dục là làm cho con người tìm thấy chính mình . [Socrates]",
+//     "Ước mơ không có ngày hết hạn, hãy hít thở sâu và cố gắng thêm lần nữa.",
+//     "Cuộc sống rất ngắn. Đừng lẵng phí nó bởi những nỗi buồn. Hãy là chính mình, luôn vui vẻ, tự do, và trở thành bất cứ gì bạn muốn.",
+//     "Học, học nữa, học mãi. [V.I. Lenin]",
+//     "Phía sau tôi không có lấy một người, sao tôi dám ngã xuống.",
+//     "Trường học có thể hô biến những người thắng và người bại, nhưng cuộc sống thì không. [Bill Gate]",
+//     "Muốn xây dựng đất nước, trước hết phải phát triển giáo dục. Muốn trị nước, phải trọng dụng người tài. [Chiếu Lập Học]",
+//     "Thời gian còn lại rất ngắn. Hãy cố gắng hết sức mình, để không phải hối tiếc.",
+//     "Con đường do bản thân lựa chọn, dù có quỳ cũng phải đi cho hết.",
+//     "Thái độ bây giờ của bạn sẽ quyết định mười năm sau bạn là một nhân vật tầm cỡ hay chỉ là một kẻ thất bại.",
+//     "Nếu như không có vận may, thì hãy thử dùng dũng khí.",
+//     "Để có thể thành công, bạn cần phải tin rằng mình có thể.",
+//     "Cách tốt nhất để làm mọi thứ là ngừng nói và làm ngay bây giờ.",
+//     "Bạn chỉ thất bại khi bạn ngừng cố gắng."
+// ]
+
+var quote = [
+    "Tri thức là sức mạnh. F.Bacon",
+    "Cần phải lựa chọn một cách nghiêm ngặt xem nên học gì và không nên học gì. [Lev Tolstoy]",
+    "Đọc sách không bằng suy ngẫm, Học trường không hơn được trường đời. [Immanuel Kant]",
+    "Nghị lực và bền bỉ có thể giúp bạn chinh phục mọi thứ",
+    "Cuộc đời sẽ tươi đẹp hơn rất nhiều nếu ta có những tình bạn đúng nghĩa, luôn hết mình vì người khác.",
+    "Một chữ cũng là thầy, nửa chữ cũng là thầy [Tục ngữ Việt Nam]",
+    "Vấp ngã không phải là thất bại, chỉ là dừng lại cho đỡ mỏi chân thôi!",
+    "Giáo dục là làm cho con người tìm thấy chính mình . [Socrates]",
+    "Ước mơ không có ngày hết hạn, hãy hít thở sâu và cố gắng thêm lần nữa.",
+    "Cuộc sống rất ngắn. Đừng lãng phí nó bởi những nỗi buồn. Hãy là chính mình, luôn vui vẻ, tự do, và trở thành bất cứ gì bạn muốn.",
+    "Học, học nữa, học mãi. [V.I. Lenin]",
+    "Phía sau tôi không có lấy một người, sao tôi dám ngã xuống.",
+    "Trường học có thể hô biến những người thắng và người bại, nhưng cuộc sống thì không. [Bill Gate]",
+    "Muốn xây dựng đất nước, trước hết phải phát triển giáo dục. Muốn trị nước, phải trọng dụng người tài. [Chiếu Lập Học]",
+    "Thời gian còn lại rất ngắn. Hãy cố gắng hết sức mình, để không phải hối tiếc.",
+    "Con đường do bản thân lựa chọn, dù có quỳ cũng phải đi cho hết.",
+    "Thái độ bây giờ của bạn sẽ quyết định mười năm sau bạn là một nhân vật tầm cỡ hay chỉ là một kẻ thất bại.",
+    "Nếu như không có vận may, thì hãy thử dùng dũng khí.",
+    "Để có thể thành công, bạn cần phải tin rằng mình có thể.",
+    "Cách tốt nhất để làm mọi thứ là ngừng nói và làm ngay bây giờ.",
+    "Bạn chỉ thất bại khi bạn ngừng cố gắng.",
+    // —— 30 câu bổ sung —— 
+    "Hãy biến những thất bại thành bài học, đừng để chúng biến bạn thành kẻ thất bại.",
+    "Thành công không đến với kẻ lười biếng.",
+    "Chỉ có những người dám thất bại lớn mới đạt được thành công lớn.",
+    "Không ai có thể làm bạn cảm thấy thấp kém nếu không có sự đồng ý của bạn. [E. Roosevelt]",
+    "Hãy làm hôm nay những việc người khác không muốn làm, để ngày mai bạn có được những điều người khác mơ ước.",
+    "Thành công không phải là đích đến, mà là hành trình bạn đang đi.",
+    "Hạnh phúc không phải do hoàn cảnh quyết định mà do cách bạn đón nhận hoàn cảnh.",
+    "Đừng sợ đi chậm, hãy chỉ sợ đứng yên.",
+    "Giá trị của con người không đo bằng những gì họ có mà bằng những gì họ cho đi.",
+    "Bạn không thể bơi về phía thành công nếu bạn chỉ đứng trên bờ và ngắm nhìn.",
+    "Mọi giấc mơ đều có thể trở thành hiện thực nếu bạn đủ dũng cảm để theo đuổi chúng.",
+    "Chìa khóa của thành công là tập trung vào những mục tiêu, không phải những chướng ngại.",
+    "Hãy tin vào bản thân, dù có bao nhiêu người hoài nghi xung quanh.",
+    "Con đường gian nan sẽ dẫn tới những đỉnh cao vinh quang.",
+    "Sự kiên trì hôm nay sẽ mang đến thành công ngày mai.",
+    "Hãy học cách lắng nghe, vì đó là cách thông minh nhất để trưởng thành.",
+    "Đừng bao giờ từ bỏ điều bạn thực sự mong muốn. Người có ước mơ lớn hơn sẽ mạnh mẽ hơn.",
+    "Thành công là kết quả của việc bạn chuẩn bị kỹ lưỡng gặp cơ hội.",
+    "Bạn chính là người duy nhất có thể giới hạn tiềm năng của mình.",
+    "Đừng đợi cơ hội, hãy tạo ra nó.",
+    "Tự tin là sức mạnh, kiên định là chìa khóa.",
+    "Đôi khi bạn phải rời vùng an toàn để khám phá giới hạn thực sự của mình.",
+    "Hãy sống sao cho khi bạn ngoảnh lại, bạn chỉ có thể mỉm cười.",
+    "Mỗi sáng thức dậy là một cơ hội để bạn viết tiếp câu chuyện của mình.",
+    "Thời gian không chờ đợi ai, hãy tận dụng từng khoảnh khắc.",
+    "Thách thức hôm nay sẽ là câu chuyện thành công của ngày mai.",
+    "Hãy học từ quá khứ, sống cho hiện tại, hy vọng về tương lai.",
+    "Cho đi là còn mãi, nhận lại là tạm thời.",
+    "Chỉ có trái tim can đảm mới mang lại những trải nghiệm tuyệt vời.",
+    "Đừng sợ thay đổi, vì nó là con đường duy nhất dẫn tới sự phát triển."
+];
+
+
+function newQuote() {
+    var randomNumber = Math.floor(Math.random() * (quote.length));
+    console.log("ℹ️ Đã lựa Quote #" + randomNumber + ": " + quote[randomNumber]); 
+    document.getElementById('quotedisplay').innerHTML = quote[randomNumber];
+}
