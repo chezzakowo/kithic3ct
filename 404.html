@@ -43,7 +43,14 @@
                 
                 if (timeLeft <= 0) {
                     clearInterval(redirectTimer);
-                    window.location.href = 'index.html'; // Chuyển về trang chính
+                    // Lấy đường dẫn trang hiện tại và quay lại trang chính (không sử dụng tên file cố định)
+                    var currentPath = window.location.pathname;
+                    var rootPath = currentPath.substring(0, currentPath.lastIndexOf('/'));
+                    if (rootPath === '') {
+                        window.location.href = '/'; // Root domain
+                    } else {
+                        window.location.href = rootPath; // Đường dẫn đến thư mục chứa trang hiện tại
+                    }
                 }
             }, 1000);
         }
