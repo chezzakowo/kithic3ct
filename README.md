@@ -1,4 +1,4 @@
-# 📆 Đếm ngược kì thi tuyển sinh bằng 📆
+# 📆 Đếm ngược kì thi tuyển sinh 10 Cần Thơ 📆
 
 <p align="center">
   <img src="./assets/image/web.png" alt="Xin chào!">
