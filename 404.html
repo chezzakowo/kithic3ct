@@ -23,7 +23,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Thêm script debugging -->
     <script>
+        console.log("Script loaded");
+        
         // When the user clicks on <div>, open the popup
         function myFunction() {
             var popup = document.getElementById("myPopup");
@@ -35,28 +38,28 @@
         var redirectTimer;
         
         function startCountdown() {
+            console.log("Starting countdown");
             document.getElementById('countdown').textContent = timeLeft;
             
             redirectTimer = setInterval(function() {
                 timeLeft--;
                 document.getElementById('countdown').textContent = timeLeft;
+                console.log("Countdown: " + timeLeft);
                 
                 if (timeLeft <= 0) {
                     clearInterval(redirectTimer);
-                    // Lấy đường dẫn trang hiện tại và quay lại trang chính (không sử dụng tên file cố định)
-                    var currentPath = window.location.pathname;
-                    var rootPath = currentPath.substring(0, currentPath.lastIndexOf('/'));
-                    if (rootPath === '') {
-                        window.location.href = '/'; // Root domain
-                    } else {
-                        window.location.href = rootPath; // Đường dẫn đến thư mục chứa trang hiện tại
-                    }
+                    console.log("Redirecting...");
+                    // Hardcoded URL cho GitHub Pages
+                    window.location.href = "https://chezzakowo.github.io/kithic3ct/";
                 }
             }, 1000);
         }
         
         window.onload = function() {
-            newQuote();
+            console.log("Window loaded");
+            if (typeof newQuote === 'function') {
+                newQuote();
+            }
             startCountdown();
         }
     </script>
