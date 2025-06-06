@@ -10,14 +10,14 @@ caches.has('site-static-v18').then(function(hasCache) {
 
 
 // Kiểm tra ngày
-var countDownDate = new Date("Jun 05, 2025   00:00:00").getTime();
+var countDownDate = new Date("Jun 06, 2026   00:00:00").getTime();
 var x = setInterval(function() {
 
 
 	var now = new Date().getTime();
 
-	// var distance = countDownDate - now;
-	var distance = now - countDownDate;
+	var distance = countDownDate - now;
+	// var distance = now - countDownDate;
 
 
 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
